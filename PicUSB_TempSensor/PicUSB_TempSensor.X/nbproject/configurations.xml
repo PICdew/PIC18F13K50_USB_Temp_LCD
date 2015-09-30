@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configurationDescriptor version="62">
+  <logicalFolder displayName="root" name="root" projectFiles="true">
+    <logicalFolder displayName="Header Files" name="HeaderFiles" projectFiles="true">
+      <logicalFolder displayName="framework" name="framework" projectFiles="true">
+        <logicalFolder displayName="USB" name="USB" projectFiles="true">
+          <itemPath>framework/USB/usb.h</itemPath>
+          <itemPath>framework/USB/usb_device_local.h</itemPath>
+          <itemPath>framework/USB/usb_hal.h</itemPath>
+          <itemPath>framework/USB/usb_hal_pic24f.h</itemPath>
+          <itemPath>framework/USB/usb_hal_pic18.h</itemPath>
+          <itemPath>framework/USB/usb_hal_pic24e.h</itemPath>
+          <itemPath>framework/USB/usb_device.h</itemPath>
+          <itemPath>framework/USB/usb_ch9.h</itemPath>
+          <itemPath>framework/USB/usb_hal_dspic33e.h</itemPath>
+          <itemPath>framework/USB/usb_common.h</itemPath>
+          <itemPath>framework/USB/usb_hal_pic16f1.h</itemPath>
+          <itemPath>framework/USB/usb_hal_pic24.h</itemPath>
+          <itemPath>framework/USB/usb_device_cdc.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder displayName="SPI" name="SPI" projectFiles="true">
+        <itemPath>SPI/SPI.h</itemPath>
+      </logicalFolder>
+      <logicalFolder displayName="system_config" name="system_config" projectFiles="true">
+        <logicalFolder displayName="pic18f13k50" name="pic18f13k50" projectFiles="true">
+          <itemPath>system_config/pic18f13k50/fixed_address_memory.h</itemPath>
+          <itemPath>system_config/pic18f13k50/system.h</itemPath>
+          <itemPath>system_config/pic18f13k50/io_mapping.h</itemPath>
+          <itemPath>system_config/pic18f13k50/lcd_config.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder displayName="XLCD" name="XLCD" projectFiles="true">
+        <itemPath>XLCD/LCD.h</itemPath>
+        <itemPath>XLCD/xlcd.h</itemPath>
+        <itemPath>XLCD/delays.h</itemPath>
+      </logicalFolder>
+      <itemPath>usb_config.h</itemPath>
+      <itemPath>system_config.h</itemPath>
+      <itemPath>tools.h</itemPath>
+    </logicalFolder>
+    <logicalFolder displayName="Linker Files" name="LinkerScript" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder displayName="Source Files" name="SourceFiles" projectFiles="true">
+      <logicalFolder displayName="framework" name="framework" projectFiles="true">
+        <logicalFolder displayName="USB" name="USB" projectFiles="true">
+          <itemPath>framework/USB/usb_device_cdc.c</itemPath>
+          <itemPath>framework/USB/usb_device.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder displayName="system_config" name="system_config" projectFiles="true">
+        <logicalFolder displayName="pic18f13k50" name="pic18f13k50" projectFiles="true">
+          <itemPath>system_config/pic18f13k50/system.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder displayName="XLCD" name="XLCD" projectFiles="true">
+        <itemPath>XLCD/putrxlcd.c</itemPath>
+        <itemPath>XLCD/readdata.c</itemPath>
+        <itemPath>XLCD/writdata.c</itemPath>
+        <itemPath>XLCD/putsxlcd.c</itemPath>
+        <itemPath>XLCD/wcmdxlcd.c</itemPath>
+        <itemPath>XLCD/readaddr.c</itemPath>
+        <itemPath>XLCD/openxlcd.c</itemPath>
+        <itemPath>XLCD/busyxlcd.c</itemPath>
+        <itemPath>XLCD/setddram.c</itemPath>
+        <itemPath>XLCD/setcgram.c</itemPath>
+      </logicalFolder>
+      <itemPath>main.c</itemPath>
+      <itemPath>usb_descriptors.c</itemPath>
+    </logicalFolder>
+    <logicalFolder displayName="Important Files" name="ExternalFiles" projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>framework</Elem>
+    <Elem>system_config</Elem>
+    <Elem>bsp</Elem>
+    <Elem>XLCD</Elem>
+    <Elem>SPI</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F13K50</targetDevice>
+        <targetHeader/>
+        <targetPluginBoard/>
+        <platformTool>PICkit2PlatformTool</platformTool>
+        <languageToolchain>XC8</languageToolchain>
+        <languageToolchainVersion>1.34</languageToolchainVersion>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile/>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep/>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep/>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <HI-TECH-COMP>
+        <property key="asmlist" value="true"/>
+        <property key="define-macros" value=""/>
+        <property key="extra-include-directories" value="framework/USB;system_config/pic18f13k50;./;bsp/pic18f13k50;XLCD;SPI"/>
+        <property key="identifier-length" value="255"/>
+        <property key="operation-mode" value="free"/>
+        <property key="opt-xc8-compiler-strict_ansi" value="false"/>
+        <property key="optimization-assembler" value="true"/>
+        <property key="optimization-assembler-files" value="true"/>
+        <property key="optimization-debug" value="false"/>
+        <property key="optimization-global" value="true"/>
+        <property key="optimization-invariant-enable" value="false"/>
+        <property key="optimization-invariant-value" value="16"/>
+        <property key="optimization-level" value="9"/>
+        <property key="optimization-set" value="default"/>
+        <property key="optimization-speed" value="false"/>
+        <property key="preprocess-assembler" value="true"/>
+        <property key="undefine-macros" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="0"/>
+        <property key="what-to-do" value="ignore"/>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-command-line" value=""/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="false"/>
+        <property key="calibrate-oscillator-value" value="0x3400"/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="24"/>
+        <property key="data-model-size-of-float" value="24"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="true"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-peripheral-library" value="false"/>
+        <property key="managed-stack" value="false"/>
+        <property key="opt-xc8-linker-file" value="false"/>
+        <property key="opt-xc8-linker-link_startup" value="false"/>
+        <property key="opt-xc8-linker-serial" value=""/>
+        <property key="program-the-device-with-default-config-words" value="true"/>
+      </HI-TECH-LINK>
+      <PICkit2PlatformTool>
+        <property key="pk2settings.3state" value="false"/>
+        <property key="pk2settings.preserveee" value="false"/>
+        <property key="pk2settings.setvddvoltage" value=""/>
+        <property key="pk2settings.userpgmexec" value="true"/>
+        <property key="pk2settings.usetargetpower" value="false"/>
+      </PICkit2PlatformTool>
+      <XC8-config-global>
+        <property key="advanced-elf" value="true"/>
+        <property key="output-file-format" value="-mcof,+elf"/>
+        <property key="stack-size-high" value="auto"/>
+        <property key="stack-size-low" value="auto"/>
+        <property key="stack-size-main" value="auto"/>
+        <property key="stack-type" value="compiled"/>
+      </XC8-config-global>
+    </conf>
+  </confs>
+</configurationDescriptor>
